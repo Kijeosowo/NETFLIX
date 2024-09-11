@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Mobile.css">
+    <link rel="icon" href="img/BrandAssets_Logos_02-NSymbol-removebg-preview.png" type="img/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-neutral-900 fonttext">
+    <div id="preloader">
+        <img src="img/Netflix_logo-removebg-preview.png" alt="">
+    </div>
+
+    <section class="mt-48">
+        <div class="flex flex-row justify-center items-center sm:flex-col sm:flex">
+            <h1 class="text-white text-5xl">Who's watching?</h1>
+        </div>
+            <div class="flex justify-center items-center gap-[30px] mt-10 profiles">
+                <div class="scale">
+                    <a href="mainPage.html"><img src="img/bossbaby.jpg" class="w-32 rounded" alt="boss baby"></a>
+                    <p class="text-center mt-2 text-neutral-500">Kije</p>
+                </div>
+                <div class="scale">
+                    <a href="#"><img src="img/rainbow.jpg" class="w-32 h-32 rounded" alt="boss baby"></a>
+                    <p class="text-center mt-2 text-neutral-500">Kids</p>
+                </div>
+                <div class="">
+                    <a href="#"><i class="fa-solid fa-circle-plus text-7xl text-neutral-500 pt-6 pb-10 pl-8 pr-8 hover:rounded hover:bg-neutral-200"></i></a>
+                    <p class="text-center mt-2 text-neutral-500">Add Profile</p>
+                </div>
+            </div>
+        
+            <div class="flex flex-row justify-center items-center mt-20 ">
+                <p class="text-1xl text-neutral-500 border border-solid border-neutral-500
+                pt-2 pb-2 pl-10 pr-10 hover:text-white hover:border-white">Manage Profiles</p>
+            </div>
+    </section>
+
+    <script src="Index.js"></script>
+</body>
+</html>

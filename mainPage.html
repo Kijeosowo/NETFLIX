@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Mobile.css">
+    <link rel="icon" href="img/BrandAssets_Logos_02-NSymbol-removebg-preview.png" type="img/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral-900 fonttext w-[100%]">
+    <section id="">
+<div id="default-carousel" class="" data-carousel="slide">
+  <!-- ---------------------------------------------------- -->
+  <nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo"><img src="img/Netflix_logo-removebg-preview.png" alt=""></a>
+        <ul class="nav-links">
+          <li class="home"><a href="#">Home</a></li>
+          <li><a href="https://www.netflix.com/browse/genre/83" class="ml-0">Tv Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">New & Popular</a></li>
+          <li><a href="#">My List</a></li>
+          <li><a href="#">Browse by Languages</a></li>
+
+          <div class="icons ml-0 flex flex-row gap-[50px] text-white">
+            <div class="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="">
+                <p><a href="#">Kids</a></p>
+            </div>
+            <div class="flex flex-row">          
+              <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" 
+              class="" 
+              type="button"><img src="img/bossbaby.jpg" class="w-7 rounded" alt="">
+          </button>
+          </div>
+          </div>
+      </ul>
+
+          <div class="icon-burger z-50">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+          </div>
+        
+    </div>
+</nav>
+
+  <!-- Carousel wrapper -->
+  <div class="relative overflow-hidden rounded-lg md:h-96" id="hero-img">
+       <!-- Item 1 -->
+      <div class="hidden duration-1000 ease-in-out top-boy" data-carousel-item>
+          <div class="mt-[15%] relative ml-10">
+            <h1 class="text-7xl text-white bettercallsaul">Better Call Saul</h1>
+            <p class="text-sm text-white mt-5">Ex-con artist Jimmy McGill turns into a small time attorney and goes through series <br> 
+              of trials and tragedies, as he transforms into his alter ego Saul Goodman, a morally <br> challenged criminal Lawyer.</p>
+              <div class="flex flex-row mt-5">
+                <button class="bg-white pt-2 pb-2 pl-8 pr-8 text-2xl rounded"><i class="fa-solid fa-play"></i> Play</button>
+                <button class="bg-neutral-500 pt-2 pb-2 pl-8 pr-8 text-2xl text-white rounded ml-10"><i class="fa-solid fa-info"></i> More Info</button>
+              </div>
+          </div>
+      </div>
+</div>
+</section>
+
+
+<!-- -------------------------------------------------- -->
+    <section class="ml-10 mt-10">
+      <h1 class="ml-0 pb-0 text-2xl text-white relative z-50">My List</h1>
+      <div class="list">
+        <!----------------------------GRISELDA  -------------------------------->
+        <div class="popover__wrapper cursor-pointer">
+              <img src="img/Griselda.jpg" class="" alt="Griselda">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/Grigif.gif" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-3">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Griselda</p>
+              <p class="text-white text-sm">A thrilling drug drama series.</p>
+              </div>
+          </div>
+      </div>
+
+        <!-- -----------------------------SUITS----------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/suitsnew.jpg" class="h-[29vh]" alt="Suits">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/suitspic.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Suits</p>
+          <p class="text-white text-[10px] font-light">A college dropout, Mike Ross works for Harvey specter as a law associate despite not having gone to law school.</p>
+          </div>
+      </div>
+  </div>
+        <!-- ------------------------------MEA CULPA------------------------------------ -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/Mea culpa.jpg" class="" alt="Mea Culpa">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/Mea culpa.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Mea Culpa</p>
+          <p class="text-white text-[10px]">A criminal defense attorney takes on the case of a seductive artist accused of murdering his girlfriend.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- -------------------------THE GENTLEMAN-------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/thegent.jpg" class="" alt="Gentlemen">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/thegent.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">The Gentlemen</p>
+          <p class="text-white text-[10px]">When aristocratic Eddie inherits the family estate, he discovers that it's ho,e to an enormous weed empire.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ----------------------Testament of moses---------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/moses.jpg" class="" alt="Moses">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/moses.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Testament: Story of Moses</p>
+          <p class="text-white text-[10px]">A chronicle of Moses' life as a prince, a prophet and more, with insights from theologians and historians.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ------------------------Ginny and Georgia------------------------------------ -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/g&g.jpg" class="" alt="G&G">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/g&g.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Ginny & Georgia</p>
+          <p class="text-white text-[10px]">Teenage Ginny and her family yearn to put down roots in a picturesque New England town after years on the run.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ------------Love at first sight----------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/lafs.jpg" class="" alt="Love at first sight">
+        <div class="popover__content">
+          <img alt="gfg_logo" src="img/lafs.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">  Love at first sight.</p>
+          <p class="text-white text-[10px]">On their flight from New York to London, Hadley and Oliver fall in love with each other.</p>
+          </div>
+      </div>
+      </div>
+      </div>
+
+    </section>
+
+    <!-- ------------------------------------------------------------- -->
+    <section class="ml-10 mt-10">
+      <h1 class="ml-0 pb-0 text-2xl text-white relative z-50">My List</h1>
+      <div class="list">
+        <!----------------------------Sex Education  -------------------------------->
+        <div class="popover__wrapper cursor-pointer">
+              <img src="img/sexedu.jpg" class="" alt="Griselda">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/sexedu.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-3">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Sex Education</p>
+              <p class="text-white text-sm">How british teenagers navigate their sex lives.</p>
+              </div>
+          </div>
+      </div>
+
+        <!-- -----------------------------Supacel----------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/supacel.png" class="h-[29vh]" alt="Suits">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/supacel.png" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Supacel</p>
+          <p class="text-white text-[10px] font-light">4 Youths from south london find out they have super powers, watch how things turn out.</p>
+          </div>
+      </div>
+  </div>
+        <!-- ------------------------------MEA CULPA------------------------------------ -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/Mea culpa.jpg" class="" alt="Mea Culpa">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/Mea culpa.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Mea Culpa</p>
+          <p class="text-white text-[10px]">A criminal defense attorney takes on the case of a seductive artist accused of murdering his girlfriend.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- -------------------------Stranger Things-------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/stranger_things_3_hd_movies.jpg" class="" alt="Gentlemen">
+      <div class="popover__content">
+          <img alt="Stranger-Things" src="img/Stranger-Things.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Stranger Things</p>
+          <p class="text-white text-[10px]">A town in indianapolis find out there is a secret government organisation undder them.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ----------------------Testament of moses---------------------------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/blacklist.jpg" class="" alt="Moses">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/blacklist.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Blacklist</p>
+          <p class="text-white text-[10px]">...</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ------------------------Ginny and Georgia------------------------------------ -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/g&g.jpg" class="" alt="G&G">
+      <div class="popover__content">
+          <img alt="gfg_logo" src="img/g&g.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Ginny & Georgia</p>
+          <p class="text-white text-[10px]">Teenage Ginny and her family yearn to put down roots in a picturesque New England town after years on the run.</p>
+          </div>
+      </div>
+  </div>
+
+        <!-- ------------Love at first sight----------------- -->
+        <div class="popover__wrapper cursor-pointer">
+          <img src="img/korra2.jpg" class="" alt="Love at first sight">
+        <div class="popover__content">
+          <img alt="gfg_logo" src="img/korra2.jpg" />
+          <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+          <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+          <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+          </div>
+          <div class="ml-3">
+            <p class="text-green-500 font-bold">Legend of Korra</p>
+          <p class="text-white text-[10px]">The Avatar after Aang.</p>
+          </div>
+      </div>
+      </div>
+      </div>
+
+    </section>
+
+    <!-- --------------------------------------------------------------------------------- -->
+    <section class="ml-0 mt-10">
+      <h1 class="ml-10 pb-5 text-2xl text-white relative z-50">Top movies in Nigeria Today</h1>
+      <div class="top-movies">
+        <!----------------------------Afamefuna  -------------------------------->
+        <div class="relative z-50 flex flex-row">
+          <img src="img/1-removebg-preview.png" class="w-56 z-20" alt="">
+          <img src="img/Afam.jpg" class="w-32 h-48 -ml-20" alt="">
+        </div>
+        <!-- -----------------------------Sisu----------------------------------- -->
+          <div class="relative z-50 flex flex-row">
+            <img src="img/2-removebg-preview.png" class="w-56 z-20" alt="">
+            <img src="img/SISU.jpeg" class="w-32 h-48 -ml-20" alt="">
+          </div>
+        <!-- ------------------------------The wages of fear------------------------------------ -->
+          <div class="relative z-50 flex flex-row">
+            <img src="img/3-removebg-preview.png" class="w-56 z-20" alt="">
+            <img src="img/wages of fear.jpg" class="w-32 h-48 -ml-20" alt=""> 
+          </div>
+        <!-- -------------------------Heart of hunter-------------------------------- -->
+          <div class="relative z-50 flex flex-row">
+            <img src="img/4-removebg-preview.png" class="w-56 z-20" alt="">
+            <img src="img/heart of hunter.jpg" class="w-32 h-48 -ml-20" alt="">
+          </div>
+        <!-- ----------------------Tearsmith---------------------------------- -->
+          <div class="relative z-50 flex flex-row">
+            <img src="img/5-removebg-preview.png" class="w-56 z-20" alt="">
+            <img src="img/tearsmith.jpg" class="w-32 h-48 -ml-20" alt="">
+              
+          </div>
+        <!-- -----------------------maze runner--------------------------------- -->
+          <div class="relative z-50 flex flex-row">
+            <img src="img/6-removebg-preview.png" class="w-56 z-20" alt="">
+            <img src="img/maze runner.jpg" class="w-32 h-48 -ml-20" alt="">
+          </div>
+
+      </div>
+    </section>
+
+        <!-- ------------------------------------------------------------------ -->
+        <section class="ml-10 mt-10">
+          <h1 class="ml-0 pb-0 text-2xl text-white relative z-50">My List</h1>
+          <div class="list">
+            <!----------------------------Colin in black and white  -------------------------------->
+            <div class="popover__wrapper cursor-pointer">
+                  <img src="img/cbw.jpg" class="" alt="Griselda">
+              <div class="popover__content">
+                  <img alt="gfg_logo" src="img/cbw.jpg" />
+                  <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-3">
+                  <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-green-500 font-bold">Colin in Black & White.</p>
+                  <p class="text-white text-[10px]">A black high school teen in a racist world.</p>
+                  </div>
+              </div>
+          </div>
+    
+            <!-- -----------------------------YOU----------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/you.jpg" class="h-[29vh]" alt="Suits">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/you.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">YOU</p>
+              <p class="text-white text-[10px] font-light">A Psycoppathic man.</p>
+              </div>
+          </div>
+      </div>
+            <!-- ------------------------------Blood and water------------------------------------ -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/bw2.png" class="" alt="Mea Culpa">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/bw2.png" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Blood & Water</p>
+              <p class="text-white text-[10px]">Starts with the abduction of a baby, 17 years later, the youngser sister looks for the baby that was abducted.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- -------------------------Entergalactic-------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/entergalactic.jpg" class="" alt="Gentlemen">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/entergalactic.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Entergalactic</p>
+              <p class="text-white text-[10px]">About an animated character played by Kid cudi.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ----------------------Testament of moses---------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/moses.jpg" class="" alt="Moses">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/moses.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Testament: Story of Moses</p>
+              <p class="text-white text-[10px]">A chronicle of Moses' life as a prince, a prophet and more, with insights from theologians and historians.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ------------------------Ginny and Georgia------------------------------------ -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/g&g.jpg" class="" alt="G&G">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/g&g.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Ginny & Georgia</p>
+              <p class="text-white text-[10px]">Teenage Ginny and her family yearn to put down roots in a picturesque New England town after years on the run.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ------------Love at first sight----------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/lafs.jpg" class="" alt="Love at first sight">
+            <div class="popover__content">
+              <img alt="gfg_logo" src="img/lafs.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">  Love at first sight.</p>
+              <p class="text-white text-[10px]">On their flight from New York to London, Hadley and Oliver fall in love with each other.</p>
+              </div>
+          </div>
+          </div>
+          </div>
+    
+        </section>
+
+        <!-- ------------------------------------------------------------------ -->
+        <section class="ml-10 mt-10">
+          <h1 class="ml-0 pb-0 text-2xl text-white relative z-50">My List</h1>
+          <div class="list">
+            <!----------------------------Bridgerton  -------------------------------->
+            <div class="popover__wrapper cursor-pointer">
+                  <img src="img/bridgerton.jpg" class="" alt="Griselda">
+              <div class="popover__content">
+                  <img alt="gfg_logo" src="img/bridgerton.jpg" />
+                  <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-3">
+                  <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+                  <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-green-500 font-bold">Bridgerton</p>
+                  <p class="text-white text-[10px]">Thirsty mama's do everything to secure a match for their daughters before the end of the seeason.</p>
+                  </div>
+              </div>
+          </div>
+    
+            <!-- -----------------------------SUITS----------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/suitspic.jpg" class="h-[29vh]" alt="Suits">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/suitsnew.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Suits</p>
+              <p class="text-white text-[10px] font-light">A college dropout, Mike Ross works for Harvey specter as a law associate despite not having gone to law school.</p>
+              </div>
+          </div>
+      </div>
+            <!-- ------------------------------Lucifer------------------------------------ -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/lucifer.jpg" class="" alt="Mea Culpa">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/lucifer.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Lucifer</p>
+              <p class="text-white text-[10px]">A very tiring series.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- -------------------------THE Rookie-------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/rookie.jpg" class="" alt="Rookie">
+          <div class="popover__content lucifer">
+              <img alt="gfg_logo" src="img/rookie.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">The Rookie</p>
+              <p class="text-white text-[10px]">About a 45 year old man that joins the LAPD as a Rookie.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ----------------------Testament of moses---------------------------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/moses.jpg" class="" alt="Moses">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/moses.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Testament: Story of Moses</p>
+              <p class="text-white text-[10px]">A chronicle of Moses' life as a prince, a prophet and more, with insights from theologians and historians.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ------------------------Ginny and Georgia------------------------------------ -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/g&g.jpg" class="" alt="G&G">
+          <div class="popover__content">
+              <img alt="gfg_logo" src="img/g&g.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">Ginny & Georgia</p>
+              <p class="text-white text-[10px]">Teenage Ginny and her family yearn to put down roots in a picturesque New England town after years on the run.</p>
+              </div>
+          </div>
+      </div>
+    
+            <!-- ------------Love at first sight----------------- -->
+            <div class="popover__wrapper cursor-pointer">
+              <img src="img/lafs.jpg" class="" alt="Love at first sight">
+            <div class="popover__content">
+              <img alt="gfg_logo" src="img/lafs.jpg" />
+              <div class="flex flex-row gap-[10px] text-1xl ml-3 mr-3 mt-1">
+              <div class="flex justify-center text-black bg-white p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-play mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-plus mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-up mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-thumbs-down mt-1"></i></div>
+              <div class="flex justify-center text-white border-white border p-[.5rem] rounded-[50px] h-10 w-10"><i class="fa-solid fa-chevron-down mt-1"></i></div>
+              </div>
+              <div class="ml-3">
+                <p class="text-green-500 font-bold">  Love at first sight.</p>
+              <p class="text-white text-[10px]">On their flight from New York to London, Hadley and Oliver fall in love with each other.</p>
+              </div>
+          </div>
+          </div>
+          </div>
+    
+        </section>
+
+
+    <!-- -------------------------Footer--------------------------- -->
+    <section class="mt-10 sec-footer">
+        <!-- <div class="flex flex-row text-2xl text-white ml-[23%] foot-icons">
+          <i class="fa-brands fa-facebook-f px-3"></i>
+          <i class="fa-brands fa-instagram px-3"></i>
+          <i class="fa-brands fa-youtube px-3"></i>
+        </div> -->
+        <footer class="">
+              <div class="mt-5 help">
+                <p><a href="#" class="text-neutral-500 text-sm">Auto Description</a></p>
+                <p class="mt-2"><a href="#" class="text-neutral-500 text-sm">Investor Relations</a></p>
+                <p class="mt-2"><a href="#" class="text-neutral-500 text-sm">Legal Notices</a></p>
+              </div>
+
+              <div class="mt-10 help text-neutral-500 text-sm ">
+                <p class="mt-2"><a href="#">Help Center</a></p>
+                <p class="mt-2"><a href="#">Jobs</a></p>
+                <p class="mt-2"><a href="#">Cookie Preferences</a></p>
+              </div>
+      
+              <div class="mt-10 help text-neutral-500 text-sm ">
+                <p class="mt-2"><a href="#">Gift Cards</a></p>
+                <p class="mt-2"><a href="#">Terms of use</a></p>
+                <p class="mt-2"><a href="#">Corporate Information</a></p>
+              </div>
+      
+              <div class="mt-10 help text-neutral-500 text-sm ">
+                <p class="mt-2"><a href="#">Media Center</a></p>
+                <p class="mt-2"><a href="#">Privacy</a></p>
+                <p class="mt-2"><a href="#">Contact Us</a></p>
+              </div>
+        </footer>
+
+      <div class="flex flex-col justify-around place-items-center mt-[5%] pb-20">
+        <a href="#" class="text-neutral-500 border border-neutral-500 border-solid p-2">Service Codes</a>
+        <p class="mt-5 text-sm text-neutral-500">&copy; 1997 - 2024 Netflix, Inc.</p>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="Index.js"></script>
+</body>
+</html>

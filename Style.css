@@ -1,0 +1,240 @@
+/*--------------------- Scroll Bar ------------------*/
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top left, #333, #333);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-button {
+  font-size: 3rem;
+}
+
+body {
+  font-family: 'op';
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader img {
+  width: 30%;
+}
+
+.container {
+  background-image: linear-gradient(to bottom, black, transparent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 0%;
+}
+.logo {
+  width: 12%;
+  margin-left: 5%;
+}
+
+/* .icons {
+  margin-left: 30%;
+} */
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav-links li {
+  padding: 0px 15px;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Nav-text {
+  display: none;
+}
+
+.Nav-footer {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none; /* Hide burger menu on desktop */
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#hero-img {
+    background-image: url('img/better-call-saul.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -7%;
+    z-index: -10;
+}
+
+.fonttext {
+    font-family: "Open Sans", sans-serif;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+.scale {
+    transition: width 1s, height 1s, transform 1s;
+}
+.icons {
+  margin-top: 0%;
+}
+.icon-burger {
+  display: flex;
+  gap: 10px;
+}
+
+/*--------------------- Main Page --------------------*/
+.list {
+  display: grid;
+  grid-template-columns: repeat(7, 420px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: -50px;
+}
+.list1 {
+  display: grid;
+  grid-template-columns: repeat(6, 420px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+.list2 {
+  display: grid;
+  grid-template-columns: repeat(6, 420px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+.list3 {
+  display: grid;
+  grid-template-columns: repeat(6, 420px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+}
+
+.top-movies {
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+/* -----------------Popover------------------------- */
+/* Popover styling */
+.popover__wrapper {
+  position: relative;
+  margin-top: 1rem;
+  display: inline-block;
+  width: 90%;
+}
+.popover__wrapper:hover {
+  transform: scale(1.05);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.popover__content {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  z-index: 60;
+  left: 30%;
+  transform: translate(0, 10px);
+  background-color: #333;
+  padding: 0rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 70%;
+  margin-top: -50%;
+  height: 35vh;
+  border-radius: 5px;
+}
+.popover__content:before {
+  position: relative;
+  z-index: -1;
+  content: "";
+  
+  top: -8px;
+  
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -12px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.lucifer {
+  height: 10vh;
+}
+
